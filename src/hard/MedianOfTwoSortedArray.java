@@ -40,7 +40,7 @@ public class MedianOfTwoSortedArray {
         if (medianHigh.value >= medianLow.value) {
             medianHigh.nowTarget = medianHigh.index + medianLow.index + 1;
         } else {
-            for (int i = medianLow.) {}
+            //for (int i = medianLow.) {}
         }
 
 //        while (median2.nowTarget > targetHigh) {

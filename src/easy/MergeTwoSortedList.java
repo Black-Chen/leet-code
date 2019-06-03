@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * MergeTwoSortedList
+ * easy.MergeTwoSortedList
  *
  * @author black
  * @date 2019/6/1

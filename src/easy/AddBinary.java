@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * AddBinary
+ * easy.AddBinary
  *
  * @author black
  * @date 2019/6/3

@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * SqrtX
+ * easy.SqrtX
  *
  * @author black
  * @date 2019/6/3

@@ -1,7 +1,9 @@
+package easy;
+
 import java.util.HashSet;
 
 /**
- * RemoveDuplicatesfromSortedArray
+ * easy.RemoveDuplicatesfromSortedArray
  *
  * @author black
  * @date 2019/6/1

@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * LengthOfLastWord
+ * easy.LengthOfLastWord
  *
  * @author black
  * @date 2019/6/2

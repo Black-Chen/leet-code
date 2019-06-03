@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * LongestCommonPrefix
+ * easy.LongestCommonPrefix
  *
  * @author black
  * @date 2019/6/1

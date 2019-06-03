@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * RemoveDuplicatesFromSortedList
+ * easy.RemoveDuplicatesFromSortedList
  *
  * @author black
  * @date 2019/6/3

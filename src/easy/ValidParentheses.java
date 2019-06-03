@@ -1,10 +1,12 @@
+package easy;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Stack;
 
 /**
- * ValidParentheses
+ * easy.ValidParentheses
  *
  * @author black
  * @date 2019/6/1

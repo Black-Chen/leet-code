@@ -1,8 +1,10 @@
+package easy;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * PlusOne
+ * easy.PlusOne
  *
  * @author black
  * @date 2019/6/3

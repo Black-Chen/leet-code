@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * RemoveElement
+ * easy.RemoveElement
  *
  * @author black
  * @date 2019/6/2

@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * ImplementStr
+ * easy.ImplementStr
  *
  * @author black
  * @date 2019/6/2

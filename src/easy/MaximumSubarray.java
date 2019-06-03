@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * MaximumSubarray
+ * easy.MaximumSubarray
  *
  * @author black
  * @date 2019/6/2

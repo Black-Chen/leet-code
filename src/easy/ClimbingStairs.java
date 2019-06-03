@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * ClimbingStairs
+ * easy.ClimbingStairs
  *
  * @author black
  * @date 2019/6/3

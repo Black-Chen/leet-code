@@ -1,7 +1,7 @@
-import java.util.HashMap;
+package easy;
 
 /**
- * CountAndSay
+ * easy.CountAndSay
  *
  * @author black
  * @date 2019/6/2

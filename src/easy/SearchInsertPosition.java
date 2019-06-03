@@ -1,5 +1,7 @@
+package easy;
+
 /**
- * SearchInsertPosition
+ * easy.SearchInsertPosition
  *
  * @author black
  * @date 2019/6/2

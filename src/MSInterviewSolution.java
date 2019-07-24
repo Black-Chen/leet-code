@@ -24,7 +24,7 @@ public class MSInterviewSolution {
     public static class TrieTree {
         public HashMap<Character, TrieTree> node;
         public TrieTree() {
-            node = new HashMap<Character, TrieTree>();
+            this.node = new HashMap<Character, TrieTree>();
         }
     }
 
@@ -65,8 +65,7 @@ public class MSInterviewSolution {
                 list.add(prefix);
             } else {
                 for (Map.Entry<Character, TrieTree> entry : next.node.entrySet()) {
-                    prefix = prefix + entry.getKey();
-                    List<String> currentList = appendCommand(prefix, entry.getValue());
+                    List<String> currentList = appendCommand(prefix + entry.getKey(), entry.getValue());
                     if (currentList.size() > 0) {
                         list.addAll(currentList);
                     }

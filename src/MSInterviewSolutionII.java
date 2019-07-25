@@ -43,7 +43,10 @@ public class MSInterviewSolutionII {
                         oper.push(ch);
                         nums.push(val);
                     } else {
-                        val = calc(oper.pop(), nums.pop(), val);
+                        while (priority <= lastPriority) {
+                            val = calc(oper.pop(), nums.pop(), val);
+                            lastPriority = oper.isEmpty() ? 0 : operatorPriorityMap.get(oper.peek());
+                        }
                         oper.push(ch);
                         nums.push(val);
                     }

@@ -10,6 +10,39 @@ import java.util.List;
  * @date 2019/6/3
  */
 public class HammingDistance {
+
+    public static void main(String[] args) {
+        System.out.println(hammingDistanceNew(1, 4));
+    }
+
+    public static int hammingDistanceNew(int x, int y) {
+        int count = 0;
+        while (x != 0 || y != 0) {
+            int digitx = x & 1;
+            int digity = y & 1;
+            if (x == 0) {
+                if (digity != 0) {
+                    count++;
+                }
+                y = y >> 1;
+                continue;
+            }
+            if (y == 0) {
+                if (digitx != 0) {
+                    count++;
+                }
+                x = x >> 1;
+                continue;
+            }
+            if (digitx != digity) {
+                count++;
+            }
+            x = x >> 1;
+            y = y >> 1;
+        }
+        return count;
+    }
+
     public int hammingDistance(int x, int y) {
         List<Integer> xBits = getBitsList(x);
         List<Integer> yBits = getBitsList(y);

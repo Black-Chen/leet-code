@@ -38,6 +38,47 @@ public class PathSumII {
         System.out.println(new PathSumII().pathSum(new TreeNode(1), 1));
     }
 
+    public List<List<Integer>> pathSum1(TreeNode root, int sum) {
+        List<List<Integer>> paths = new ArrayList<>();
+        findPaths(root, paths, sum, new ArrayList<Integer>());
+        return paths;
+    }
+
+    public void findPaths(TreeNode root, List<List<Integer>> paths, int sum, List<Integer> parentPath) {
+        if (root == null) {
+            return;
+        }
+        parentPath.add(root.val);
+        if (root.val == sum && root.left == null && root.right == null) {
+            paths.add(parentPath);
+            return;
+        }
+        findPaths(root.left, paths, sum - root.val, new ArrayList<Integer>(parentPath));
+        findPaths(root.right, paths, sum - root.val, new ArrayList<Integer>(parentPath));
+    }
+
+    public List<List<Integer>> pathSum2(TreeNode root, int sum) {
+        List<List<Integer>> paths = new ArrayList<>();
+        findPaths2(root, paths, sum, new ArrayList<Integer>());
+        return paths;
+    }
+
+    public void findPaths2(TreeNode root, List<List<Integer>> paths, int sum, List<Integer> parentPath) {
+        if (root == null) {
+            return;
+        }
+        parentPath.add(root.val);
+        if (root.val == sum && root.left == null && root.right == null) {
+            paths.add(new ArrayList<Integer>(parentPath));
+            parentPath.remove(parentPath.size() - 1);
+            return;
+        }
+        findPaths(root.left, paths, sum - root.val, parentPath);
+        findPaths(root.right, paths, sum - root.val, parentPath);
+
+        parentPath.remove(parentPath.size() - 1);
+    }
+
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         if (root == null) {
             return new ArrayList<>();

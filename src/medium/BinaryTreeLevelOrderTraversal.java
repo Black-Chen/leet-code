@@ -42,4 +42,22 @@ public class BinaryTreeLevelOrderTraversal {
         }
         return lists;
     }
+
+    public List<List<Integer>> levelOrder1(TreeNode root) {
+        List<List<Integer>> lists = new ArrayList<>();
+        dfs(root, 0, lists);
+        return lists;
+    }
+
+    private void dfs(TreeNode root, int depth, List<List<Integer>> lists) {
+        if (root == null) {
+            return;
+        }
+        if (depth == lists.size()) {
+            lists.add(new ArrayList<Integer>());
+        }
+        lists.get(depth).add(root.val);
+        dfs(root.left, depth + 1, lists);
+        dfs(root.right, depth + 1, lists);
+    }
 }

@@ -38,4 +38,19 @@ public class BinaryTreeInorderTraversal {
         }
         return result;
     }
+
+    public List<Integer> inorderTraversal1(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        traversal(root, result);
+        return result;
+    }
+
+    private void traversal(TreeNode root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        traversal(root.left, result);
+        result.add(root.val);
+        traversal(root.right, result);
+    }
 }

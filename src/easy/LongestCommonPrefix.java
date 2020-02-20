@@ -13,6 +13,21 @@ public class LongestCommonPrefix {
         System.out.println(longestCommonPrefix(new String[] {"dog","racecar","car"}));
     }
 
+    public static String logestCommonPrefix2(String[] strs) {
+        if (strs.length == 0) {
+            return "";
+        }
+        for (int i = 0; i < strs[0].length(); i++) {
+            char value = strs[0].charAt(i);
+            for (int j = 0; j < strs.length; j++) {
+                if (i == strs[j].length() || value != strs[j].charAt(i)) {
+                    return strs[0].substring(0, i);
+                }
+            }
+        }
+        return strs[0];
+    }
+
     public static String longestCommonPrefix(String[] strs) {
         StringBuilder stringBuilder = new StringBuilder();
         boolean isSame = true;
